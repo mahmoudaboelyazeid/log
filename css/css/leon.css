@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main-transtion: 0.3s;
+}
+
+body {
+  text-transform: capitalize;
+  background-image: url(https://media.istockphoto.com/id/2162944052/photo/wood-texture-background-top-view-of-vintage-wooden-table-with-cracks-surface-of-old-knotted.jpg?s=2048x2048&w=is&k=20&c=9awyChPUzNyGyhSMBD1y4dorli9qGcz0MERJ1Mj69Cw=);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.parent .contaner {
+  background-color: #ebcbb4;
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 35px 15px black;
+}
+
+.parent .one-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: -20px;
+}
+
+.contaner .two {
+  position: relative;
+}
+
+.contaner .two i {
+  font-size: 25px;
+  position: absolute;
+  top: 213px;
+  right: 480px;
+}
+
+
+.contaner form label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contaner form input {
+  margin-bottom: 25px;
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 10px;
+}
+
+.contaner form input:focus {
+  transition: var(--main-transtion);
+  -webkit-transition: var(--main-transtion);
+  -moz-transition: var(--main-transtion);
+  -ms-transition: var(--main-transtion);
+  -o-transition: var(--main-transtion);
+  box-shadow: -1px 2px 15px 10px #1b1920;
+}
+
+.contaner form input:nth-of-type(3) {
+  margin-left: 55px;
+}
+
+.contaner .alone input {
+  padding: 10px;
+  margin: 25px;
+  text-align: center;
+  width: 80px;
+}
+
+.a {
+  text-decoration: none;
+  transition: var(--main-transtion);
+  -webkit-transition: var(--main-transtion);
+  -moz-transition: var(--main-transtion);
+  -ms-transition: var(--main-transtion);
+  -o-transition: var(--main-transtion);
+}
+
+.a:hover {
+  text-decoration: underline;
+}
+
+input::placeholder {
+  padding: 10px;
+}
+
+@media(max-width: 600px) {
+
+  .parent .contaner {
+    width: 350px;
+  }
+
+  .contaner form input:nth-of-type(3) {
+    margin: 0 30px 5px;
+  }
+
+  .contaner .two i {
+    top: 30px;
+    right: -33px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .contaner .two i {
+    top: 30px;
+    right: -34px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .contaner .two i {
+    top: 30px;
+    right: -35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contaner .two i {
+    top: 30px;
+    right: -34px;
+  }
+}
